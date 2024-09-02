@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link aos animationn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <!-- Build from small screen -->
+  <body>
+    <!-- Navigition bar -->
+    <header class="header">
+      <nav class="navigation">
+        <img src="img/logo-book-shop.png" alt="" />
+        <div class="humberger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li class="collections">
+            <a href="#">Collections</a>
+            <ul class="nav-sub">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Pages</a></li>
+          <li class="categories">
+            <a href="#">Categories</a>
+            <ul class="nav-sub">
+              <li><a href="#">Item 1</a></li>
+              <li><a href="#">Item 2</a></li>
+              <li><a href="#">Item 3</a></li>
+              <li><a href="#">Item 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="btn bdr-small">
+          <i class="fa-solid fa-user"></i>
+          Login / Register
+        </button>
+      </nav>
+    </header>
+    <!-- end of navigation bar -->
+
+    <!-- hero section -->
+    <div class="hero-section bdr-small">
+      <div class="descrip">
+        <h1 data-aos="zoom-out-up" data-aos-duration="1000">
+          Huge collection of <span class="primary-heading">best books</span>
+        </h1>
+        <p class="magin-tb" data-aos="zoom-out-up" data-aos-duration="2000">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          facere beatae numquam, laboriosam, delectus magnam architecto ducimus
+          nulla veniam consequuntur nobis a iste cupiditate rerum aliquid dolor
+          reiciendis enim itaque?
+        </p>
+        <form action="" data-aos="zoom-out-up" data-aos-duration="1000">
+          <div class="form-group bdr-big">
+            <input type="text" placeholder="Search of book..." />
+            <div class="icon-form bdr-big">
+              <p>Search</p>
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <img src="img/layer-slider-model.png" alt="" />
+    </div>
+    <!-- end of hero section -->
+
+    <!-- categories section -->
+    <div class="categories-section">
+      <div class="btn-wraper">
+        <button class="btn bdr-small">Categories</button>
+      </div>
+      <h1 style="text-align: center; margin-bottom: 4rem" class="magin-tb">
+        XtraBook Collections
+      </h1>
+      <div class="categories-cart">
+        <article class="cart-detail cart-1 bdr-small">
+          <h3 class="magin-tb">Action</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+
+        <article class="cart-detail cart-2 bdr-small">
+          <h3 class="magin-tb">Classic</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+
+        <article class="cart-detail cart-3 bdr-small">
+          <h3 class="magin-tb">Adventure</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+      </div>
+
+      <div class="categories-cart">
+        <article class="cart-detail cart-6 bdr-small">
+          <h3 class="magin-tb">Classic</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+
+        <article class="cart-detail cart-5 bdr-small">
+          <h3 class="magin-tb">Design</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+
+        <article class="cart-detail cart-4 bdr-small">
+          <h3 class="magin-tb">Action and Adventure.</h3>
+          <a href="#" class="btn bdr-small">
+            <i class="fa-solid fa-angle-right"></i>
+            View collection
+          </a>
+        </article>
+      </div>
+    </div>
+    <!-- end of categories section -->
+
+    <!-- best seller section -->
+    <div class="contain-best" data-aos="fade-down" data-aos-duration="1000">
+      <div class="btn-wraper">
+        <button class="btn bdr-small">Best sellers</button>
+      </div>
+      <h1 style="text-align: center; margin-bottom: 4rem" class="magin-tb">
+        This year's top sellers
+      </h1>
+      <div class="best-section">
+        <article class="cart-container">
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package7-1-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Autobiography</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 22</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img src="img/Book2.png" alt="" />
+            </div>
+            <h3>Network R</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 22</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="cart-container">
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img src="img/Book1.png" alt="" />
+            </div>
+            <h3>Viper in the Window</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 18</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package6-1-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <h3>The Cave</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 22</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="best-section">
+        <article class="cart-container">
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package3-1-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <h3>Natural Cosmetic</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 45</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2017/06/package2-1-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <h3>The Birth</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 30</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+        </article>
+
+        <article class="cart-container">
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/book-9-600x600.jpg"
+                alt=""
+              />
+            </div>
+            <h3>5 Years</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 20</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+
+          <div class="cart bdr-small">
+            <div class="cart-img">
+              <img
+                src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/book-10.jpg"
+                alt=""
+              />
+            </div>
+            <h3>The Laddy's cross</h3>
+            <div class="cart-price">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star-half-stroke"></i>
+              </span>
+              <p>$ 12</p>
+            </div>
+            <button class="btn bdr-small">
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add to cart
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- end of best seller section -->
+
+    <!-- feedback section -->
+    <div class="feedback-section">
+      <button class="btn btn-big bdr-small">Testimonials</button>
+      <h1>What Customer Say</h1>
+      <div
+        class="feedback-container"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
+        <article class="feedback-cart">
+          <p>
+            "The very best. Really good. I wish I would have though of it first.
+            I couldn't have asked for more than this."
+          </p>
+          <p>Jenny <span>Teacher</span></p>
+          <div class="feedback-img">
+            <img
+              src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/testimonial-2.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="feedback-cart">
+          <p>
+            "The very best. Really good. I wish I would have though of it first.
+            I couldn't have asked for more than this."
+          </p>
+          <p>Logan <span>Doctor</span></p>
+          <div class="feedback-img">
+            <img
+              src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/testimonial-1.png"
+              alt=""
+            />
+          </div>
+        </article>
+        <article class="feedback-cart">
+          <p>
+            "The very best. Really good. I wish I would have though of it first.
+            I couldn't have asked for more than this."
+          </p>
+          <p>Rose <span>Designer</span></p>
+          <div class="feedback-img">
+            <img
+              src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/testimonial-4.jpg"
+              alt=""
+            />
+          </div>
+        </article>
+      </div>
+    </div>
+    <!-- end of feedback section -->
+
+    <!-- Special offers -->
+    <div class="special-section bdr-small">
+      <div class="special-text">
+        <button class="btn btn-big bdr-small">Special Offers</button>
+        <h1>Get %20 off for your first order!</h1>
+        <p>
+          An online book is a resource in book-like from that is only available
+          to read on the Internet. It differs from the common idea of an e-book.
+        </p>
+        <button class="btn btn-special btn-big bdr-small">
+          <i class="fa-solid fa-basket-shopping"></i>
+          Purchase now
+        </button>
+      </div>
+    </div>
+    <!-- end of special offers -->
+
+    <!-- Authors section -->
+    <div class="authors-section">
+      <button class="btn btn-big bdr-small">Authors</button>
+      <h1>Most Popular Authors</h1>
+      <article
+        class="authors-container"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
+        <div class="authors-cart">
+          <img
+            src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/team-member-1.jpg"
+            alt=""
+          />
+          <div class="social">
+            <div class="social-face">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-ins">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <h3>Adam Grant</h3>
+          <p>Psychologist</p>
+        </div>
+
+        <div class="authors-cart">
+          <img
+            src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/team-2.jpg"
+            alt=""
+          />
+          <div class="social">
+            <div class="social-face">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-ins">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <h3>Dan Brown</h3>
+          <p>American author</p>
+        </div>
+
+        <div class="authors-cart">
+          <img
+            src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/team-3.jpg"
+            alt=""
+          />
+          <div class="social">
+            <div class="social-face">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-ins">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <h3>James Patterson</h3>
+          <p>Psychologist</p>
+        </div>
+
+        <div class="authors-cart">
+          <img
+            src="https://xtratheme.com/elementor/book-shop/wp-content/uploads/sites/69/2021/09/team-4.jpg"
+            alt=""
+          />
+          <div class="social">
+            <div class="social-face">
+              <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="social-ins">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+          <h3>J. K. Rowling</h3>
+          <p>British author</p>
+        </div>
+      </article>
+    </div>
+    <!-- end of Author section -->
+
+    <!-- footer section -->
+    <div class="footer-section bdr" data-aos="fade-up" data-aos-duration="1000">
+      <article class="footer-container">
+        <div class="footer-main">
+          <img src="img/logo-book-shop.png" alt="" />
+          <p>
+            “Be who you are and say what you feel, because those who mind don't
+            matter, and those who matter don't mind.”
+          </p>
+          <a href="#">-Bernard M. Baruch</a>
+        </div>
+
+        <div class="footer-item">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Tags</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Request a Book</a></li>
+            <li><a href="#">DMCA Notice</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3>About us</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+    <!-- link code javaScript -->
+    <script src="app.js"></script>
+    <!-- link aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
